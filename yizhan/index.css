@@ -1,0 +1,262 @@
+.banner_wrap {
+  position: relative;
+}
+
+.search_wrap {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  font-size: 0;
+  position: absolute;
+  justify-content: center;
+  bottom: 0;
+}
+
+.search input {
+  width: 300px;
+  height: 100%;
+  font-size: 1rem;
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(115, 113, 113, 0.822);
+  cursor: pointer;
+}
+
+.search input:focus-visible {
+  outline: none;
+}
+
+.search select {
+  width: 300px;
+  height: 100%;
+  font-size: 1rem;
+  vertical-align: top;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(184, 179, 179, 0.822);
+  cursor: pointer;
+}
+
+.search button {
+  width: 200px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.search a .booking {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.home_page_news_wrap {
+  width: 1200px;
+  display: flex;
+  margin: auto;
+}
+
+.news_title,
+.restaurant_title {
+  text-align: center;
+  font-size: 30px;
+  color: #666;
+  margin: 80px;
+}
+
+.newscard {
+  width: 50%;
+  margin: 20px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 1px 1px 1px 1px #c5c2c2;
+}
+
+.news_pic img {
+  width: 100%;
+  height: 300px;
+  vertical-align: top;
+  border-radius: 10px 10px 0 0;
+}
+
+.news_date {
+  font-size: 10px;
+  padding: 10px 0 5px 10px;
+}
+
+.news_txt {
+  font-size: 15px;
+  padding: 0 0 10px 10px;
+}
+
+.about_wrap {
+  display: table;
+  width: 100%;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  margin: 10% 0 10% 0;
+}
+
+.about_wrap {
+  background-image: url(https://www.grand-hotel.org/fileupload/Building/TW/7.jpg);
+}
+
+.about_card {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.about_txt {
+  max-width: 500px;
+  background-color: #fff;
+  opacity: 0.85;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.about_title {
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.about_card .about {
+  font-size: 18px;
+  letter-spacing: 0.3em;
+  line-height: 2;
+}
+
+.home_room_wrap {
+  width: 100%;
+  margin: 50px 0 0 0;
+  display: flex;
+}
+
+.home_room_block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 80px 0;
+}
+
+.room_txt {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 20%);
+  margin-bottom: 80px;
+  margin-right: -30px;
+}
+
+.room_title {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.room_txt .type {
+  font-size: 20px;
+  padding: 5px;
+  color: #8a2225;
+}
+
+.room_txt .content {
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 2;
+  padding: 30px;
+  color: #666;
+}
+
+.room_pic {
+  width: 600px;
+  position: relative;
+}
+
+.room_pic img {
+  width: 100%;
+}
+
+.room_pic .more {
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b3b3b386;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transition: 1s ease-in-out;
+}
+
+.room_pic .more p {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.room_pic .more:hover {
+  opacity: 1;
+}
+
+.restaurant_title {
+  margin-top: 10%;
+}
+
+.restaurant_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.restaurant_pic {
+  width: 450px;
+  height: 400px;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.restaurant_pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform: scale(1);
+  transition: 1.5s ease-in-out;
+  box-shadow: 2px 2px 2px 2px #c5c2c2;
+}
+
+.restaurant_pic img:hover {
+  transform: scale(1.1);
+}
+
+.restaurant_type {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  z-index: 50;
+}
+
+.location_title {
+  font-size: 30px;
+  text-align: center;
+  margin: 80px 0;
+}
+
+.location {
+  display: flex;
+  justify-content: space-around;
+}

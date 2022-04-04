@@ -1,0 +1,171 @@
+.restaurant_page_title {
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  color: #6d1114da;
+  font-weight: bold;
+  margin: 5%;
+}
+
+.restaurant_page_title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  width: 30%;
+  height: 1px;
+  background-color: #6d1114da;
+  transform: translateY(-50%);
+}
+
+.restaurant_page_title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  background-color: #6d1114da;
+  transform: translateY(-50%);
+  left: 5%;
+}
+
+.book {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#click_1,
+#click_2,
+#click_3 {
+  position: absolute;
+  opacity: 0;
+}
+
+.book img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5% 0 0 5%;
+  box-shadow: 2px 2px 2px 0 #c5c2c2;
+}
+.restaurant_cover {
+  width: 600px;
+  height: 500px;
+}
+.restaurant_book {
+  width: 600px;
+  height: 500px;
+  position: relative;
+  perspective: 1500px;
+}
+.restaurant {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: 0.5s;
+  color: #000;
+}
+
+.restaurant_title {
+  font-size: 30px;
+  padding: 20px 0 0 30px;
+  color: #231815;
+}
+
+.restaurant_txt {
+  color: #666;
+  padding: 0 0 20px 30px;
+}
+
+.restaurant_txt .intro {
+  font-size: 13px;
+  padding: 10px 0 20px 0;
+  line-height: 1.5;
+}
+
+.restaurant_txt .sever_hours {
+  font-size: 16px;
+  padding: 20px 0 20px 30px;
+  line-height: 2.5;
+}
+
+.restaurant_txt .sever_tel {
+  font-size: 16px;
+  padding: 0 0 20px 30px;
+  line-height: 2.5;
+}
+
+.restaurant_txt .sever_note {
+  font-size: 13px;
+  color: red;
+  line-height: 1.5;
+  padding: 20px 0 20px 0;
+}
+
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 0 13px;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-radius: 0 5% 5% 0;
+  box-shadow: 2px 2px 2px 2px #c5c2c2;
+}
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  background-color: #666;
+}
+.next-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+  cursor: pointer;
+  color: #666;
+  font-weight: bold;
+}
+.back-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+#p1 {
+  z-index: 3;
+}
+#p2 {
+  z-index: 2;
+}
+#p3 {
+  z-index: 1;
+}
+#click_1:checked ~ .restaurant_book #p1 {
+  transform: rotateY(-180deg);
+  z-index: 1;
+}
+#click_2:checked ~ .restaurant_book #p2 {
+  transform: rotateY(-180deg);
+  z-index: 2;
+}
+#click_3:checked ~ .restaurant_book #p3 {
+  transform: rotateY(-180deg);
+  z-index: 3;
+}

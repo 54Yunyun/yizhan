@@ -36,7 +36,7 @@ a {
   display: block;
   width: 150px;
   height: 60px;
-  background-image: url(http://127.0.0.1:5500/common/images/logo.png);
+  background-image: url(../images/logo.png);
   background-size: cover;
   background-position: center;
 }

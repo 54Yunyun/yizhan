@@ -88,6 +88,7 @@
 @media screen and (max-width: 767px) {
   .accordion {
     height: 1500px;
+    margin-bottom: 90%;
   }
   .accordion ul {
     width: 100%;
@@ -117,8 +118,5 @@
   .accordion ul:hover li:hover {
     width: 100%;
     transition: none;
-  }
-  .footer_wrap {
-    margin-top: 80%;
   }
 }

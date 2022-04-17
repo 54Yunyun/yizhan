@@ -300,6 +300,10 @@ a {
     background-color: rgba(255, 255, 255, 0.8);
   }
 
+  .booking {
+    right: 15%;
+  }
+
   #menu_switch:checked ~ .main_header .main_nav {
     opacity: 1;
     left: 0;
@@ -320,9 +324,5 @@ a {
     bottom: 24px;
     transform: rotate(-225deg);
     transition: bottom 0.5s, transform 0.5s;
-  }
-
-  .booking {
-    right: 15%;
   }
 }

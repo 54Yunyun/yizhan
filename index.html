@@ -9,51 +9,44 @@
 
     <link rel="stylesheet" href="./css/header_footer.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/accordion.css">
+
 </head>
 
 <body>
+    <input type="checkbox" name="" id="menu_switch">
     <div class="main_header">
         <h1 class="logo">
             <a href="./index.html"></a>
         </h1>
-
-        <div class="main_nav">
+        <label for="menu_switch" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main_nav">
             <ul>
                 <li><a href="./news_page.html">最新消息</a></li>
                 <li><a href="./room_page.html">房型介紹</a></li>
                 <li><a href="./restaurant_page.html">餐飲服務</a></li>
                 <li><a href="./facility_page.html">休閒設施</a></li>
-                <li><a href="##"> <span class="booking">線上訂房</span></a></li>
             </ul>
-        </div>
+        </nav>
+        <a href="##"> <span class="booking">線上訂房</span></a>
     </div>
 
-
-    <div class="banner_wrap">
-        <div class="pic">
-            <img src="./images/home_banner.png" alt="首頁橫幅圖">
-        </div>
-        <div class="search_wrap">
-            <div class="search">
-                <input class="check-in " type="date">
-                <input class="check-out " type="date">
-                <select name="number" id="">
-                    <option value="1">1人</option>
-                    <option value="2">2人</option>
-                    <option value="3">3人</option>
-                    <option value="4">4人</option>
-                    <option value="5">5人</option>
-                </select>
-                <a href="##">
-                    <button class="booking">查詢房況</button>
-                </a>
-            </div>
+    <div class="slider_wrap">
+        <div class="slider">
+            <div class="slide first_img"></div>
+            <div class="slide sec_img"></div>
+            <div class="slide third_img"></div>
+            <div class="slide fourth_img"></div>
+            <div class="slide first_img"></div>
         </div>
     </div>
-
-
-
     <div class="news_title">最新消息</div>
+
     <div class="home_page_news_wrap">
         <div class="newscard">
             <a href="##">
@@ -91,7 +84,8 @@
         <div class="home_room_block">
             <div class="room_txt">
                 <div class="room_title">房型介紹</div>
-                <div class="content">驛站提供了適合個人旅遊或家庭團聚的休閒客房，依據旅遊的不同需求，提供您貼心舒適的服務，讓您遠離都市塵囂，徜徉在夢幻般的山水間，體驗極致之舒適住宿環境。</div>
+                <div class="content">驛站提供了適合個人旅遊或家庭團聚的休閒客房，依據旅遊的不同需求，提供您貼心舒適的服務，讓您遠離都市塵囂，徜徉在夢幻般的山水間，體驗極致之舒適住宿環境。
+                </div>
             </div>
             <div class="room_pic">
                 <a href="./room_page.html">
@@ -104,30 +98,57 @@
         </div>
     </div>
 
-    <div class="restaurant_title">餐飲服務</div>
-    <div class="restaurant_wrap">
-        <div class="restaurant_pic">
-            <a href="./restaurant_page.html">
-                <div class="restaurant_type">御膳坊</div>
-                <img src="./images/restaurant_page_first.jpg">
-            </a>
-        </div>
-        <div class="restaurant_pic">
-            <a href="./restaurant_page.html">
-                <div class="restaurant_type">驛站茶坊</div>
-                <img src="./images/restaurant_page_sec.jpg">
-            </a>
-        </div>
-        <div class="restaurant_pic">
-            <a href="./restaurant_page.html">
-                <div class="restaurant_type">驛站酒坊</div>
-                <img src="./images/restaurant_page_third.jpg">
-            </a>
-        </div>
+    <div class="accordion">
+        <ul>
+
+            <li class="restaurant_first">
+                <a href="">
+                    <div class="accordion_title">
+                        <h3>御膳坊</h3>
+                    </div>
+                </a>
+            </li>
+
+            <li class="restaurant_sec">
+                <a href="#">
+                    <div class="accordion_title">
+                        <h3>驛站茶坊</h3>
+                    </div>
+                </a>
+            </li>
+
+            <li class="restaurant_third">
+                <a href="#">
+                    <div class="accordion_title">
+                        <h3>驛站酒坊</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="pool">
+                <a href="#">
+                    <div class="accordion_title">
+                        <h3>游泳池</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="gym">
+                <a href="#">
+                    <div class="accordion_title">
+                        <h3>健身房</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="spa">
+                <a href="#">
+                    <div class="accordion_title">
+                        <h3>SPA</h3>
+                    </div>
+                </a>
+            </li>
+        </ul>
     </div>
 
-
-    <div class="footer_wrap">
+    <!-- <div class="footer_wrap">
         <div class="footerbox">
             <ul class="contactlist">
                 <li>
@@ -167,7 +188,7 @@
                 若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 
 </html>

@@ -1,0 +1,83 @@
+.slider_wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 100%;
+  animation: animate 15s linear infinite;
+}
+.slider_wrap .slide {
+  position: relative;
+  width: 20%;
+  height: 80%;
+  float: left;
+}
+
+@keyframes animate {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+.slider_wrap .slider .slide.first_img {
+  background: url(../images/banner_2.png);
+  background-size: cover;
+  background-position: center;
+}
+.slider_wrap .slider .slide.sec_img {
+  background: url(../images/facility_banner2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.slider_wrap .slider .slide.third_img {
+  background: url(../images/news_banner2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.slider_wrap .slider .slide.fourth_img {
+  background: url(../images/room_banner2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* @media screen and(min-width: 768px) and(max-width: 1199px) {
+  .slider_wrap {
+    height: calc(100vh - 400px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slider_wrap {
+    height: calc(100vh - 300px);
+  }
+} */

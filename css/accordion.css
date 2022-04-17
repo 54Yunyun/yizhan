@@ -1,0 +1,124 @@
+.accordion ul .restaurant_first {
+  background-image: url("../images/restaurant_page_first.jpg");
+}
+.accordion ul .restaurant_sec {
+  background-image: url("../images/restaurant_page_sec.jpg");
+}
+.accordion ul .restaurant_third {
+  background-image: url("../images/restaurant_page_third.jpg");
+}
+.accordion ul .pool {
+  background-image: url("../images/facility_pool_outdoor.jpg");
+}
+.accordion ul .gym {
+  background-image: url("../images/facility_gym.jpg");
+}
+.accordion ul .spa {
+  background-image: url("../images/facility_spa.jpg");
+}
+
+.accordion a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.accordion ul li {
+  position: relative;
+}
+.accordion h3 {
+  width: 100%;
+  position: absolute;
+  font-size: 28px;
+  background-color: rgba(169, 163, 157, 0.42);
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .accordion {
+    max-width: 1200px;
+    height: 500px;
+    overflow: hidden;
+    margin: 10% auto;
+  }
+  .accordion ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .accordion a {
+    width: 100%;
+    z-index: 3;
+    color: #fff;
+    text-decoration: none;
+    transition: all 400ms ease;
+    opacity: 0;
+    position: relative;
+  }
+
+  .accordion ul li {
+    width: 16.66666%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 800ms ease;
+    display: flex;
+  }
+  .accordion h3 {
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+    right: 50%;
+
+    transform: translateX(50%);
+  }
+  .accordion ul:hover li {
+    width: 8%;
+  }
+  .accordion ul:hover li:hover {
+    width: 60%;
+  }
+
+  .accordion ul:hover li:hover a {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .accordion {
+    height: 1500px;
+  }
+  .accordion ul {
+    width: 100%;
+    height: 300px;
+  }
+
+  .accordion ul li {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .accordion_title {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .accordion h3 {
+    font-size: 26px;
+    padding: 10px;
+    bottom: 2px;
+    transform: translateY(5%);
+  }
+
+  .accordion ul li:hover,
+  .accordion ul:hover li,
+  .accordion ul:hover li:hover {
+    width: 100%;
+    transition: none;
+  }
+  .footer_wrap {
+    margin-top: 80%;
+  }
+}

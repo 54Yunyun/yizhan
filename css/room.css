@@ -3,6 +3,11 @@
   text-shadow: #ccc 0.2em 0.2em 0.2em;
 }
 
+.banner_wrap .pic img {
+  width: 100%;
+  height: calc(100vh - 150px);
+}
+
 .room_title {
   position: relative;
   font-size: 30px;

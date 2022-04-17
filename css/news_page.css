@@ -11,6 +11,10 @@
   font-weight: bold;
   margin: 5%;
 }
+.banner_wrap .pic img {
+  width: 100%;
+  height: calc(100vh - 150px);
+}
 
 .news_page_title::after {
   content: "";

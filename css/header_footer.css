@@ -60,6 +60,9 @@ a {
   justify-content: center;
   padding: 30px 0;
 }
+.contactlist {
+  display: flex;
+}
 
 .contact_type {
   display: block;
@@ -232,6 +235,9 @@ a {
     transform: rotate(-225deg);
     transition: bottom 0.5s, transform 0.5s;
   }
+  .contactlist {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -324,5 +330,8 @@ a {
     bottom: 24px;
     transform: rotate(-225deg);
     transition: bottom 0.5s, transform 0.5s;
+  }
+  .contactlist {
+    display: block;
   }
 }

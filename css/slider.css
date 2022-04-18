@@ -60,12 +60,12 @@
   background-position: center;
 }
 .slider_wrap .slider .slide.third_img {
-  background: url(../images/news_banner2.jpg);
+  background: url(../images/news_banner.jpg);
   background-size: cover;
   background-position: center;
 }
 .slider_wrap .slider .slide.fourth_img {
-  background: url(../images/room_banner2.jpg);
+  background: url(../images/room_banner.jpg);
   background-size: cover;
   background-position: center;
 }

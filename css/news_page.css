@@ -51,9 +51,8 @@
 .news_card {
   width: 33.33333%;
   margin: 20px;
-
   border-radius: 10px 10px 10px 10px;
-  box-shadow: 3px 3px 3px 3px #c5c2c2;
+  box-shadow: 2px 2px 2px 2px #c5c2c2;
 }
 
 .news_pic img {
@@ -103,7 +102,7 @@
   width: 100%;
   height: 100%;
   top: 0;
-  transition: 1s ease;
+  transition: 0.8s ease;
 }
 
 .news_card .info p {

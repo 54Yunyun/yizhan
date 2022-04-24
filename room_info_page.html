@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>驛站</title>
+    <link rel="stylesheet" href="./css/room_info_page.css">
+    <link rel="stylesheet" href="./css/header_footer.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/room_info.js"></script>
+    <script src="https://kit.fontawesome.com/bdc29c6e91.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <input type="checkbox" name="" id="menu_switch">
+
+    <div class="main_header">
+        <h1 class="logo">
+            <a href="./index.html"></a>
+        </h1>
+        <label for="menu_switch" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main_nav">
+            <ul>
+                <li><a href="./news_page.html">最新消息</a></li>
+                <li class="current_page"><a href="./room_page.html">房型介紹</a></li>
+                <li><a href="./restaurant_page.html">餐飲服務</a></li>
+                <li><a href="./facility_page.html">休閒設施</a></li>
+            </ul>
+        </nav>
+        <a href="##"> <span class="booking">線上訂房</span></a>
+    </div>
+
+
+    <div class="banner_wrap">
+        <div class="pic"><img src="./images/room_banner.jpg" alt=""></div>
+    </div>
+
+    <h2 class="room_title">尊榮套房</h2>
+
+    <div class="pic_wrap">
+        <div class="sliderwrap">
+            <div id="roomslider">
+
+                <ul id="room_pic">
+                    <li name="room_img"><img src="./images/third_room.jpg" alt=""></li>
+                    <li name="room_img"><img src="./images/room_info1.jpg" alt=""></li>
+                    <li name="room_img"><img src="./images/room_info2.jpg" alt=""></li>
+                    <li name="room_img"><img src="./images/room_info3.jpg" alt=""></li>
+                    <li name="room_img"><img src="./images/room_info4.jpg" alt=""></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="buttonwrap">
+
+            <ul id="roombutton">
+                <li><img src="./images/third_room.jpg" alt=""></li>
+                <li><img src="./images/room_info1.jpg" alt=""></li>
+                <li><img src="./images/room_info2.jpg" alt=""></li>
+                <li><img src="./images/room_info3.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="info_wrap">
+
+        <div class="info">
+            <div class="infocard">
+                <div class="infotext">
+                    床型：兩大床 (180cm*200cm)<br>
+                    坪數：22坪<br>
+                    入住時間：15:00後<br>
+                    退房時間：11:00前<br>
+                    定價：NT$10,000<br>
+                    ※為確保住宿品質，訪客請於晚間11點以前離開，逾時需視同住宿收費。
+
+                </div>
+            </div>
+
+
+            <div class="tabs">
+                <input type="radio" name="tabs" id="tabone" checked="checked">
+                <label for="tabone">客房介紹</label>
+                <div class="tab">
+                    <p class="notice_info">※此為飯店形象照，實際房型與風景依據房間方位有所不同，若有特殊需求敬請於訂房時告知。
+                    </p>
+                    <p class="container">
+                        · 附有客廳<br>
+                        · 附有吧檯<br>
+                        · 乾溼分離衛浴、按摩浴缸、吹風機、沐浴/洗髮備品及一次性清潔用品<br>
+                        · 高速寬頻免費上網<br>
+                        · 中華電信MOD電視頻道<br>
+                        · HD高畫質42吋液晶電視<br>
+                        · 防火偵測裝置<br>
+                        · 獨立調節控溫裝置<br>
+                        · 迷你冰箱、熱水壺<br>
+                    </p>
+                    <p class="notice_info">※不含早餐、備品及需提供嬰幼兒嬰兒床，敬請事前告知。</p>
+                </div>
+
+                <input type="radio" name="tabs" id="tabtwo">
+                <label for="tabtwo">入住須知</label>
+                <div class="tab">
+
+                    <p class="
+notice_title">加人收費標準：</p>
+                    <p class="container"> · 兒童未滿6歲不佔床不收費，含早餐及備品乙份。<br>
+                        · 6-12歲需加收NT$450，含早餐及備品乙份。<br>
+                        · 13歲以上需加收NT$900，含早餐及備品乙份。<br>
+                        · 加床費NT$1200，含早餐及備品乙份。<br>
+                        · 提供嬰兒床、嬰兒澡盆和奶瓶消毒鍋借用，數量有限，請洽訂房組預約保留。</p>
+                    <p class="
+                        notice_title">飯店注意事項：</p>
+                    <p class="container">· 依據菸害防制法規定，園區全面禁止吸煙，若有相關行為，飯店有權收取清潔費用。<br>
+                        · 每房可享一車免費停車，停車場營業時間：24小時。<br>
+
+                        · 本飯店保有所有說明與未載明事項最終解釋權。</p>
+                </div>
+
+                <input type="radio" name="tabs" id="tabthree">
+                <label for="tabthree">飯店服務</label>
+                <div class="tab">
+
+
+                    <p class="container">
+                        · 付費機場禮車接送(請事先預訂)<br>
+                        · 免費定時專車往返捷運站接送服務<br>
+                        · 客房餐飲服務：07:00-22:30 (最後點餐時間：22:00)<br>
+                        · 全館免費無線上網服務<br>
+                        · 住宿期間可免費使用健身房、戶外游泳池及聯誼會設施(付費項目除外)<br>
+                        · 付費打包及郵寄服務<br>
+                        · 洗衣及乾洗服務</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer_wrap">
+        <div class="footerbox">
+            <ul class="contactlist">
+                <li>
+                    <p class="contact_type">TEL</p>
+                    <p class="contact">03-8888-8888</p>
+                </li>
+                <li>
+                    <p class="contact_type">FAX</p>
+                    <p class="contact">03-6666-6666</p>
+                </li>
+                <li>
+                    <p class="contact_type">ADD</p>
+                    <p class="contact">桃園市中壢區復興路46號</p>
+                </li>
+                <li>
+                    <p class="contact_type">E-mail</p>
+                    <p class="contact">yizhan@gmail.com</p>
+                </li>
+            </ul>
+            <div class="social">
+                <p class="contact_type">FOLLOW</p>
+                <a href="##">
+                    <img src="./images/fb.png" alt="">
+                </a>
+                <a href="##">
+                    <img src="./images/line.png" alt="">
+                </a>
+                <a href="##">
+                    <img src="./images/mail.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="bottombox">
+            <div class="footer_info">2022 © Yizhan Hotel Copyright All Rights Reserved</div>
+            <div class="notice">
+                本網站為緯育TibaMe前端設計工程師班第75期學員專題作品， 本平台僅供學習、展示之用。參考資源:北投麗禧溫泉酒店、礁溪山形閣溫泉飯店、太魯閣菁英酒店、雲品溫泉酒店<br>
+                若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

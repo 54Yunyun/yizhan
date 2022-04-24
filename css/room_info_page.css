@@ -1,0 +1,299 @@
+.main_nav .current_page a {
+  color: #8a2225;
+  text-shadow: #ccc 0.2em 0.2em 0.2em;
+}
+.banner_wrap {
+  width: 100%;
+}
+.banner_wrap .pic {
+  width: 100%;
+}
+.banner_wrap .pic img {
+  width: 100%;
+  height: calc(100vh - 150px);
+}
+
+.room_title {
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  color: #6d1114da;
+  font-weight: bold;
+  margin: 5%;
+}
+
+.room_title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  width: 30%;
+  height: 1px;
+  background-color: #6d1114da;
+  transform: translateY(-50%);
+}
+
+.room_title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 30%;
+  height: 1px;
+  background-color: #6d1114da;
+  transform: translateY(-50%);
+}
+.pic_wrap {
+  width: 100%;
+}
+.sliderwrap {
+  width: 75%;
+  height: calc(100vh - 230px);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#roomslider {
+  width: 75%;
+  height: 100%;
+  overflow: hidden;
+}
+#room_pic {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+
+#room_pic li img {
+  height: 100%;
+}
+
+.buttonwrap {
+  width: 75%;
+  margin: auto;
+}
+
+#roombutton {
+  width: 75%;
+  display: flex;
+  margin: auto;
+}
+#roombutton li {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+}
+
+#roombutton li img {
+  width: 80%;
+  height: 100%;
+}
+
+.info_wrap {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.infocard {
+  max-width: 500px;
+  display: block;
+  border: 1px solid #ccc;
+  background-color: #f7f3ee;
+  margin: auto;
+}
+
+.infotext {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 2;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #666;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ccc;
+}
+p {
+  font-size: 18px;
+  color: #666;
+}
+.notice_info {
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(48, 48, 48);
+}
+
+.tab .container {
+  line-height: 2;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.notice_title {
+  padding: 20px 0 15px 0;
+  font-weight: bold;
+  color: rgb(48, 48, 48);
+}
+
+.tabs label {
+  display: block;
+  padding: 16px 32px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabs .tab {
+  order: 1;
+  width: 100%;
+  display: none;
+  padding: 16px;
+}
+.tabs input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+.tabs input[type="radio"]:checked + label {
+  background: #8a2225;
+  color: #f7f3ee;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .banner_wrap .pic img {
+    height: 350px;
+  }
+  .sliderwrap {
+    width: 100%;
+    height: 350px;
+  }
+  .info {
+    display: block;
+  }
+  .infocard {
+    width: 100%;
+    margin: auto;
+  }
+  .notice_info {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  .tab .container {
+    line-height: 1.5;
+  }
+
+  .tabs {
+    width: 100%;
+    margin: auto;
+    border-bottom: none;
+  }
+  .tabs label {
+    padding: 10px 20px;
+  }
+  .infotext {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .tabs .tab,
+  .tabs label {
+    order: 1;
+  }
+  .tabs label {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner_wrap .pic img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .room_title {
+    width: 50%;
+    font-size: 20px;
+    margin: 20px auto;
+  }
+
+  .room_title::after,
+  .room_title::before {
+    display: none;
+  }
+
+  .sliderwrap {
+    width: 100%;
+    height: 180px;
+  }
+
+  .buttonwrap {
+    width: 100%;
+  }
+
+  #roombutton li {
+    padding: 5px 0;
+  }
+
+  #roombutton li img {
+    width: 90%;
+  }
+
+  .info {
+    display: block;
+  }
+  .infocard {
+    width: 100%;
+    margin: auto;
+  }
+  .notice_info {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  .tab .container {
+    line-height: 1.5;
+  }
+
+  .tabs {
+    width: 100%;
+    margin: auto;
+    border-bottom: none;
+  }
+  .tabs label {
+    padding: 10px 20px;
+  }
+  .infotext {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .tabs .tab,
+  .tabs label {
+    order: 1;
+  }
+  .tabs label {
+    width: 100%;
+    margin-top: 8px;
+  }
+}

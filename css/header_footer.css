@@ -100,7 +100,7 @@ a {
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .hb {
     display: none;
   }
@@ -153,7 +153,7 @@ a {
     background-color: #8a2225;
     position: absolute;
     position: fixed;
-    top: 0;
+    top: 5px;
     right: 0;
     z-index: 999;
   }
@@ -307,7 +307,7 @@ a {
   }
 
   .booking {
-    right: 15%;
+    right: 20%;
   }
 
   #menu_switch:checked ~ .main_header .main_nav {

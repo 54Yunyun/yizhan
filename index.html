@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>驛站</title>
-
+    <script src="https://kit.fontawesome.com/bdc29c6e91.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/header_footer.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/slider.css">
@@ -83,17 +83,15 @@
     <div class="home_room_wrap">
         <div class="home_room_block">
             <div class="room_txt">
-                <div class="room_title">房型介紹</div>
-                <div class="content">驛站提供了適合個人旅遊或家庭團聚的休閒客房，依據旅遊的不同需求，提供您貼心舒適的服務，讓您遠離都市塵囂，徜徉在夢幻般的山水間，體驗極致之舒適住宿環境。
-                </div>
+                <div class="room_title" id="room_title"></div>
+                <div class="content" id="content"></div>
+                <div class="room_more"><a href="">查看房型</a></div>
             </div>
             <div class="room_pic">
-                <a href="./room_page.html">
-                    <img src="./images/fourth_room.jpg">
-                    <div class="more">
-                        <p>查看房型</p>
-                    </div>
-                </a>
+                <img src="./images/fourth_room.jpg" name="room_img">
+                <div class="prev" id="prev"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="next" id="next"><i class="fa-solid fa-angle-right"></i></div>
+
             </div>
         </div>
     </div>
@@ -189,6 +187,70 @@
             </div>
         </div>
     </div>
+    <script>
+        var img = document.getElementsByName("room_img")[0];
+
+
+        var imgArr = ["./images/fourth_room.jpg", "./images/first_room.jpg", "./images/sec_room.jpg", "./images/third_room.jpg"];
+        var typeArr = ["菁英套房", "雅致套房", "豪華套房", "尊榮套房"];
+        var contentArr = [
+            "怡人的現代室內設計結合現代時尚與經典東方魅力。為高品味的嘉賓們最佳居處，並享有菁英房貴賓獨享貼心禮遇。",
+            "寬敞舒適的標準客房，明亮的客房，享受身心靈全然釋放的完美假期。此房型提供面對中庭、擁有陽台或竹林造景小庭院之二款房型。",
+            "提供您貼心舒適的服務，讓您遠離都市塵囂，徜徉在夢幻般的山水間，體驗極致之舒適住宿環境。",
+            "享受著觀景陽台綠意空間讓您感受大自然中陽光及月夜的美好，讓您遠離城市塵囂，帶給您沈靜身心靈的美妙時光。",
+        ];
+
+
+        var room = 0;
+        var type = 0;
+        var content = 0;
+
+
+        var title = document.getElementById("room_title");
+        var info = document.getElementById("content");
+        title.innerHTML = "尊榮套房";
+        info.innerHTML =
+            "驛站提供了適合個人旅遊或家庭團聚的休閒客房，依據旅遊的不同需求，提供您貼心舒適的服務，讓您遠離都市塵囂，徜徉在夢幻般的山水間，體驗極致之舒適住宿環境"
+        function prev() {
+            room--;
+            type--;
+            content--;
+
+            if (room < 0) {
+                room = imgArr.length - 1;
+                type = typeArr.length - 1;
+                content = contentArr.length - 1;
+            }
+
+            img.src = imgArr[room];
+            title.innerHTML = typeArr[type];
+            info.innerHTML = contentArr[content];
+        }
+
+        function next() {
+            room++;
+            type++;
+            content++;
+
+            if (room > imgArr.length - 1) {
+                room = 0;
+                type = 0;
+                content = 0;
+            }
+
+            img.src = imgArr[room];
+
+            title.innerHTML = typeArr[type];
+            info.innerHTML = contentArr[content];
+        }
+
+        function init() {
+            document.getElementById("prev").onclick = prev;
+            document.getElementById("next").onclick = next;
+        }
+        window.addEventListener("load", init, false);
+
+    </script>
 </body>
 
 </html>

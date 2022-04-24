@@ -240,7 +240,7 @@ a {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .hb {
     display: block;
     width: 50px;

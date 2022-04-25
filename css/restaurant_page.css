@@ -17,28 +17,6 @@
   margin: 5%;
 }
 
-.restaurant_page_title::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 5%;
-  width: 30%;
-  height: 1px;
-  background-color: #6d1114da;
-  transform: translateY(-50%);
-}
-
-.restaurant_page_title::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 30%;
-  height: 1px;
-  background-color: #6d1114da;
-  transform: translateY(-50%);
-  left: 5%;
-}
-
 .book {
   width: 100%;
   display: flex;
@@ -58,15 +36,9 @@
   border-radius: 5% 0 0 5%;
   box-shadow: 2px 2px 2px 0 #c5c2c2;
 }
-.restaurant_cover {
-  width: 600px;
-  height: 500px;
-}
-.restaurant_book {
-  width: 600px;
-  height: 500px;
-  position: relative;
-  perspective: 1500px;
+.back img {
+  border-radius: 5% 0 0 5%;
+  height: 100%;
 }
 .restaurant {
   width: 100%;
@@ -80,43 +52,6 @@
   transition: 0.5s;
   color: #000;
 }
-
-.restaurant_title {
-  font-size: 30px;
-  padding: 20px 0 0 30px;
-  color: #231815;
-}
-
-.restaurant_txt {
-  color: #666;
-  padding: 0 0 20px 30px;
-}
-
-.restaurant_txt .intro {
-  font-size: 13px;
-  padding: 10px 0 20px 0;
-  line-height: 1.5;
-}
-
-.restaurant_txt .sever_hours {
-  font-size: 16px;
-  padding: 20px 0 20px 30px;
-  line-height: 2.5;
-}
-
-.restaurant_txt .sever_tel {
-  font-size: 16px;
-  padding: 0 0 20px 30px;
-  line-height: 2.5;
-}
-
-.restaurant_txt .sever_note {
-  font-size: 13px;
-  color: red;
-  line-height: 1.5;
-  padding: 20px 0 20px 0;
-}
-
 .front {
   position: absolute;
   width: 100%;
@@ -141,9 +76,37 @@
   transform: rotateY(180deg);
   backface-visibility: hidden;
   background-color: #666;
+  border-radius: 5% 0 0 5%;
+}
+.restaurant_txt {
+  color: #666;
+  padding: 0 0 20px 30px;
+  position: absolute;
+  top: 0;
+}
+.restaurant_title {
+  font-size: 20px;
+  padding: 20px 0 0 30px;
+  color: #231815;
+}
+.restaurant_cover {
+  width: 600px;
+  height: 500px;
+}
+.restaurant_book {
+  width: 600px;
+  height: 500px;
+  position: relative;
+  perspective: 1500px;
+}
+
+i {
+  font-size: 20px;
+  padding: 1px;
 }
 .next-btn {
   position: absolute;
+  font-size: 20px;
   bottom: 15px;
   right: 30px;
   cursor: pointer;
@@ -152,6 +115,7 @@
 }
 .back-btn {
   position: absolute;
+  font-size: 20px;
   bottom: 15px;
   right: 30px;
   cursor: pointer;
@@ -178,4 +142,175 @@
 #click_3:checked ~ .restaurant_book #p3 {
   transform: rotateY(-180deg);
   z-index: 3;
+}
+
+.sever_note {
+  font-size: 15px;
+  color: red;
+  line-height: 1.5;
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (min-width: 1199px) {
+  .restaurant_page_title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 30%;
+    height: 1px;
+    background-color: #6d1114da;
+    transform: translateY(-50%);
+  }
+
+  .restaurant_page_title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background-color: #6d1114da;
+    transform: translateY(-50%);
+    left: 5%;
+  }
+
+  .restaurant_title {
+    font-size: 30px;
+    padding: 20px 0 0 30px;
+    color: #231815;
+  }
+
+  .restaurant_txt .intro {
+    font-size: 13px;
+    padding: 10px 0 20px 0;
+    line-height: 1.5;
+  }
+
+  .restaurant_txt .sever_hours {
+    font-size: 16px;
+    padding: 20px 0 20px 30px;
+    line-height: 2.5;
+  }
+
+  .restaurant_txt .sever_tel {
+    font-size: 16px;
+    padding: 0 0 20px 30px;
+    line-height: 2.5;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+  .banner_wrap .pic img {
+    height: 500px;
+  }
+  .restaurant_page_title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 30%;
+    height: 1px;
+    background-color: #6d1114da;
+    transform: translateY(-50%);
+  }
+
+  .restaurant_page_title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background-color: #6d1114da;
+    transform: translateY(-50%);
+    left: 5%;
+  }
+
+  .restaurant_txt .intro {
+    font-size: 13px;
+    padding: 10px 0 20px 0;
+    line-height: 1.5;
+  }
+
+  .restaurant_txt .sever_hours {
+    font-size: 16px;
+    padding: 20px 0 20px 30px;
+    line-height: 2.5;
+  }
+
+  .restaurant_txt .sever_tel {
+    font-size: 16px;
+    padding: 0 0 20px 30px;
+    line-height: 2.5;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .banner_wrap .pic img {
+    height: 300px;
+  }
+  .restaurant_cover {
+    width: 300px;
+    height: 250px;
+  }
+  .restaurant_book {
+    width: 300px;
+    height: 250px;
+    position: relative;
+    perspective: 1500px;
+  }
+
+  .restaurant_title {
+    padding: 20px 10px;
+  }
+
+  .restaurant_txt .intro {
+    display: none;
+  }
+
+  .restaurant_txt .sever_hours {
+    font-size: 12px;
+  }
+
+  .restaurant_txt .sever_tel {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner_wrap .pic img {
+    height: 200px;
+  }
+  .restaurant_cover {
+    width: 300px;
+    height: 250px;
+  }
+  .restaurant_book {
+    width: 300px;
+    height: 250px;
+  }
+
+  .restaurant_title {
+    padding: 20px 10px;
+  }
+
+  .restaurant_txt {
+    padding: 0 10px;
+  }
+
+  .restaurant_txt .intro {
+    display: none;
+  }
+
+  .restaurant_txt .sever_hours {
+    font-size: 12px;
+  }
+
+  .restaurant_txt .sever_tel {
+    font-size: 12px;
+  }
+
+  i,
+  .next-btn,
+  .back-btn {
+    font-size: 15px;
+  }
 }

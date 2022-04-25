@@ -125,6 +125,10 @@
     display: flex;
     margin: auto;
   }
+  .news_page_title::after,
+  .news_page_title::before {
+    display: none;
+  }
 
   .news_card {
     width: 33.33333%;
@@ -137,6 +141,10 @@
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .banner_wrap .pic img {
     height: 300px;
+  }
+  .news_page_title::after,
+  .news_page_title::before {
+    display: none;
   }
   .news_wrap {
     width: 80%;

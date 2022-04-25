@@ -9,7 +9,7 @@
   text-align: center;
   color: #6d1114da;
   font-weight: bold;
-  margin: 20px auto;
+  margin: 5%;
 }
 .news_page_title::after {
   content: "";

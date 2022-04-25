@@ -56,26 +56,27 @@
   justify-content: center;
 }
 
+.facility_wrap_even {
+  width: 100%;
+  display: flex;
+  margin: 30px 0 30px 0;
+  justify-content: center;
+}
+
 .facility_pic img {
   width: 500px;
   height: 350px;
 }
 
 .facility_txt {
-  width: calc(35% + 60px);
-  min-height: 80%;
   border: 1px solid #cdd4d6;
   padding: 60px 75px 60px 50px;
-  margin-right: -60px;
-  margin-top: 60px;
   color: #231815;
   position: relative;
   text-align: center;
 }
 
 .facility_txt_even {
-  width: calc(35% + 60px);
-  min-height: 80%;
   border: 1px solid #cdd4d6;
   padding: 60px 50px 60px 75px;
   margin-left: -60px;
@@ -87,8 +88,6 @@
 
 .facility_type {
   position: absolute;
-  top: -20px;
-  left: 30px;
   padding: 10px 20px;
   color: #8a2225;
   background: #fff;
@@ -96,8 +95,6 @@
 
 .facility_type_even {
   position: absolute;
-  top: -20px;
-  right: 30px;
   padding: 10px 20px;
   color: #8a2225;
   background: #fff;
@@ -126,4 +123,191 @@
 
   line-height: 2.5;
   color: red;
+}
+@media screen and (min-width: 1200px) {
+  .facility_type_even {
+    top: -20px;
+    right: 30px;
+  }
+  .facility_type {
+    top: -20px;
+    left: 30px;
+  }
+
+  .facility_txt {
+    width: calc(35% + 60px);
+    min-height: 80%;
+    margin-right: -60px;
+    margin-top: 60px;
+  }
+
+  .facility_txt_even {
+    width: calc(35% + 60px);
+    min-height: 80%;
+    margin-left: -60px;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .banner_wrap .pic img {
+    height: 500px;
+  }
+  .facility_type_even {
+    top: -20px;
+    right: 30px;
+  }
+  .facility_type {
+    top: -20px;
+    left: 30px;
+  }
+
+  .facility_txt {
+    width: calc(35% + 60px);
+    min-height: 80%;
+    margin-right: -60px;
+    margin-top: 60px;
+  }
+
+  .facility_txt_even {
+    width: calc(35% + 60px);
+    min-height: 80%;
+    margin-left: -60px;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .banner_wrap .pic img {
+    height: 400px;
+  }
+  .facility_page_title::after,
+  .facility_page_title::before {
+    display: none;
+  }
+  .facility_wrap {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .facility_wrap_even {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .facility_pic {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .facility_pic img {
+    width: 60%;
+    height: 250px;
+  }
+
+  .facility_txt {
+    width: 60%;
+    margin: auto;
+  }
+
+  .facility_txt_even {
+    width: 60%;
+    margin: auto;
+  }
+  .facility_type {
+    top: 20px;
+    left: 10px;
+  }
+  .facility_type_even {
+    top: 20px;
+    right: 10px;
+  }
+}
+@media screen and (min-width: 479px) and (max-width: 768px) {
+  .banner_wrap .pic img {
+    height: 300px;
+  }
+  .facility_page_title::after,
+  .facility_page_title::before {
+    display: none;
+  }
+  .facility_wrap {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .facility_wrap_even {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .facility_pic {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .facility_pic img {
+    width: 70%;
+    height: 250px;
+  }
+
+  .facility_txt {
+    width: 70%;
+    margin: auto;
+  }
+
+  .facility_txt_even {
+    width: 70%;
+    margin: auto;
+  }
+  .facility_type {
+    top: 20px;
+    left: 10px;
+  }
+  .facility_type_even {
+    top: 20px;
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .banner_wrap .pic img {
+    height: 200px;
+  }
+  .facility_page_title::after,
+  .facility_page_title::before {
+    display: none;
+  }
+  .facility_wrap {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .facility_wrap_even {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .facility_pic {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .facility_pic img {
+    width: 90%;
+    height: 250px;
+  }
+
+  .facility_txt {
+    width: 90%;
+    margin: auto;
+  }
+
+  .facility_txt_even {
+    width: 90%;
+    margin: auto;
+  }
+  .facility_type {
+    top: 20px;
+    left: 10px;
+  }
+  .facility_type_even {
+    top: 20px;
+    right: 10px;
+  }
 }

@@ -105,10 +105,10 @@
 
 .infocard {
   max-width: 500px;
-  display: block;
+  height: 300px;
   border: 1px solid #ccc;
   background-color: #f7f3ee;
-  margin: auto;
+  margin: 0 50px;
 }
 
 .infotext {
@@ -174,12 +174,12 @@ p {
 .tabs input[type="radio"]:checked + label + .tab {
   display: block;
 }
-@media screen and (min-width: 767px) and (max-width: 1200px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .banner_wrap .pic img {
     height: 350px;
   }
   .sliderwrap {
-    width: 100%;
+    width: 75%;
     height: 350px;
   }
   .info {

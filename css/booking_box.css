@@ -14,7 +14,7 @@
   position: absolute;
   display: none;
   width: 400px;
-  height: 300px;
+  height: 350px;
   background-color: #f5f5f5;
   top: 0;
   right: 0;
@@ -78,6 +78,6 @@ input {
 @media screen and (max-width: 479px) {
   .box {
     width: 350px;
-    height: 350px;
+    height: 400px;
   }
 }

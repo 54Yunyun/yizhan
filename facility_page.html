@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/booking_box.css">
     <script src="./js/BookingBox.js"></script>
     <script src="./js/jquery-3.6.0.js"></script>
+
     <script src="https://kit.fontawesome.com/bdc29c6e91.js" crossorigin="anonymous"></script>
 </head>
 
@@ -150,27 +151,29 @@
 
 
 
-    <div class="facility_block" id="facility_block">
+    <div class="facility_block">
         <div class="facility_wrap">
-
             <div class="facility_txt">
-
                 <div class="facility_type">水漾</div>
                 <div class="facility_title">室內游泳池</div>
                 <div class="facility_intro">12歲以下孩童需有家長陪同</div>
                 <div class="facility_opening">開放時間<br>7:30-11:30 <br> 13:30-18:00<br>19:00-22:00</div>
                 <div class="facility_note">飯店營運內容與相關決定將視中央流行疫情指揮中心的發佈進行更新，請關注最新消息『飯店設施與服務調整』</div>
             </div>
-
             <div class="facility_pic">
-                <img src="./images/pool1.jpg" name="pool" alt="">
+                <img src="./images/pool1.jpg" alt="" id="poolImg">
+                <div class="prev" id="pool_prev"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="next" id="pool_next"><i class="fa-solid fa-angle-right"></i></div>
             </div>
+
         </div>
         <div class="facility_wrap_even">
             <div class="facility_pic">
-                <img src="./images/facility_gym.jpg" alt="">
-
+                <img src="./images/facility_gym.jpg" alt="" id="gymImg">
+                <div class="prev_even" id="gym_prev"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="next_even" id="gym_next"><i class="fa-solid fa-angle-right"></i></div>
             </div>
+
             <div class="facility_txt_even">
                 <div class="facility_type_even">有氧</div>
                 <div class="facility_title">健身室</div>
@@ -190,15 +193,19 @@
                 <div class="note"></div>
             </div>
             <div class="facility_pic">
-                <img src="./images/facility_pool_outdoor.jpg" alt="">
-
+                <img src="./images/facility_pool_outdoor.jpg" alt="" id="pool_out">
+                <div class="prev" id="pool_out_prev"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="next" id="pool_out_next"><i class="fa-solid fa-angle-right"></i></div>
             </div>
+
         </div>
         <div class="facility_wrap_even">
             <div class="facility_pic">
-                <img src="./images/facility_spa.jpg" alt="">
-
+                <img src="./images/facility_spa.jpg" alt="" id="spaImg">
+                <div class="prev_even" id="spa_prev"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="next_even" id="spa_next"><i class="fa-solid fa-angle-right"></i></div>
             </div>
+
             <div class="facility_txt_even">
                 <div class="facility_type_even">SPA</div>
                 <div class="facility_title">驛站SPA</div>
@@ -252,7 +259,109 @@
             </div>
         </div>
     </div>
+    <script>
 
+        //圖片
+        let poolImg = document.getElementById("poolImg");
+        let gymImg = document.getElementById("gymImg");
+        let pool_outImg = document.getElementById("pool_out");
+        let spaImg = document.getElementById("spaImg");
+
+        //上下張
+        let pool_pre = document.getElementById("pool_prev");
+        let pool_next = document.getElementById("pool_next");
+        let gym_pre = document.getElementById("gym_prev");
+        let gym_next = document.getElementById("gym_next");
+        let pool_out_pre = document.getElementById("pool_out_prev");
+        let pool_out_next = document.getElementById("pool_out_next");
+        let spa_pre = document.getElementById("spa_prev");
+        let spa_next = document.getElementById("spa_next");
+        //抓取所有圖片
+        let arrImg = ["./images/pool1.jpg", "./images/pool2.jpg"];
+        let arrImg2 = ["./images/facility_gym.jpg", "./images/gym2.jpg"];
+        let arrImg3 = ["./images/facility_pool_outdoor.jpg", "./images/pool_outdoor2.jpg"];
+        let arrImg4 = ["./images/facility_spa.jpg", "./images/spa2.jpg"]
+
+        //初始值為0
+        let index = 0;
+        let gym = 0;
+        let pool_out = 0;
+        let spa = 0;
+        //室內游泳池
+        function preImg() {
+            index--;
+            if (index < 0) {
+                index = arrImg.length - 1;
+            }
+            poolImg.src = arrImg[index];
+        }
+        function nextImg() {
+            index++;
+            if (index > arrImg.length - 1) {
+                index = 0;
+            }
+            poolImg.src = arrImg[index];
+        }
+
+        //健身房
+        function gympre() {
+            gym--;
+            if (gym < 0) {
+                gym = arrImg2.length - 1;
+            }
+            gymImg.src = arrImg2[gym];
+        }
+        function gymnext() {
+            gym++;
+            if (gym > arrImg2.length - 1) {
+                gym = 0;
+            }
+            gymImg.src = arrImg2[gym];
+        }
+        //室外游泳池
+        function poolOutPre() {
+            pool_out--;
+            if (pool_out < 0) {
+                pool_out = arrImg3.length - 1;
+            }
+            pool_outImg.src = arrImg3[pool_out];
+        }
+        function poolOutNext() {
+            pool_out++;
+            if (pool_out > arrImg3.length - 1) {
+                pool_out = 0;
+            }
+            pool_outImg.src = arrImg3[pool_out];
+        }
+
+        function spaPre() {
+            spa--;
+            if (spa < 0) {
+                spa = arrImg4.length - 1;
+            }
+            spaImg.src = arrImg4[spa];
+        }
+        function spaNext() {
+            spa++;
+            if (spa > arrImg4.length - 1) {
+                spa = 0;
+            }
+            spaImg.src = arrImg4[spa];
+        }
+
+        //室內游泳池
+        pool_pre.addEventListener('click', preImg);
+        pool_next.addEventListener('click', nextImg);
+        //健身房
+        gym_pre.addEventListener('click', gympre);
+        gym_next.addEventListener('click', gymnext);
+        //室外游泳池
+        pool_out_pre.addEventListener('click', poolOutPre);
+        pool_out_next.addEventListener('click', poolOutNext);
+        //spa
+        spa_pre.addEventListener('click', spaPre);
+        spa_next.addEventListener('click', spaNext);
+    </script>
 </body>
 
 </html>
